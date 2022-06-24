@@ -1,0 +1,61 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:viewmodel="clr-namespace:WPF___Application_Example_3.MVVM.ViewModel"
+                    xmlns:view="clr-namespace:WPF___Application_Example_3.MVVM.View">
+
+
+
+    <!--Data Templates apply Views to ViewModel objects displayed in the UI-->
+
+    <!--Startup Page-->
+    <DataTemplate DataType="{x:Type viewmodel:StartupViewModel}">
+        <view:StartupView/>
+    </DataTemplate>
+
+    <!--Home Page-->
+    <DataTemplate DataType="{x:Type viewmodel:HomeViewModel}">
+        <view:HomeView/>
+    </DataTemplate>
+
+    <!--Music Page-->
+    <DataTemplate DataType="{x:Type viewmodel:MusicViewModel}">
+        <view:MusicView/>
+    </DataTemplate>
+
+    <!--Movie Page-->
+    <DataTemplate DataType="{x:Type viewmodel:MovieViewModel}">
+        <view:MovieView/>
+    </DataTemplate>
+
+    <!--Search Page-->
+    <DataTemplate DataType="{x:Type viewmodel:SearchViewModel}">
+        <view:SearchView/>
+    </DataTemplate>
+
+    <!--Folder Page-->
+    <DataTemplate DataType="{x:Type viewmodel:FolderViewModel}">
+        <view:FolderView/>
+    </DataTemplate>
+
+    <!--History Page-->
+    <DataTemplate DataType="{x:Type viewmodel:HistoryViewModel}">
+        <view:HistoryView/>
+    </DataTemplate>
+
+    <!--Settings Page-->
+    <DataTemplate DataType="{x:Type viewmodel:SettingsViewModel}">
+        <view:SettingsView/>
+    </DataTemplate>
+
+    <!--About Page-->
+    <DataTemplate DataType="{x:Type viewmodel:AboutViewModel}">
+        <view:AboutView/>
+    </DataTemplate>
+
+    <!--Exit Page-->
+    <DataTemplate DataType="{x:Type viewmodel:ExitViewModel}">
+        <view:ExitView/>
+    </DataTemplate>
+
+
+</ResourceDictionary>
